@@ -19,9 +19,9 @@ toggleMenuButtons.forEach(button => {
 });
 
 
-const video = document.getElementById('video');
+// const video = document.getElementById('video');
 
-video.addEventListener('loadedmetadata', function() {
+// video.addEventListener('loadedmetadata', function() {
 
-  video.play();
-});
+//   video.play();
+// });
