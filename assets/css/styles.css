@@ -100,11 +100,12 @@ a {
   left: 36%;
   /* bottom: -10rem; */
   bottom: -20rem;
+  z-index: -1;
 }
 
 .img img {
   /* width: 420px; */
-  width: 700px;
+    width: 700px;
 }
 
 .container {
@@ -169,14 +170,15 @@ a {
   margin-bottom: 4rem;
 }
 
-.main-description p:first-child {
+.main-description .description {
   font-size: 1.2rem;
   line-height: 1.5rem;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 .main-description p:last-child {
   font-size: 2rem;
+  margin-bottom: 2rem;
 }
 
 .main-description p:last-child .director {
@@ -240,4 +242,75 @@ a {
   font-size: 2rem;
   background: transparent;
   cursor: pointer;
+}
+
+/* trailer */
+#trailer {
+  height: 100vh;
+  position: relative;
+  background-image: url(../img/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 4;
+  color: #fff;
+}
+
+#trailer::before {
+  position: absolute;
+  content: ' ';
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #000;
+  opacity: .5;
+  z-index: -1;
+}
+
+.container-trailer {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+
+.container-trailer h1 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.container-trailer h1::before {
+  position: absolute;
+  content: '';
+  bottom: 12px;
+  width: 24%;
+  height: 5px;
+  background: #fff;
+}
+
+.container-video video {
+  border-radius: 1rem;
+}
+
+.voltar {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+}
+
+.voltar .btn-trailer {
+  background: #fff;
+  border-radius: .4rem;
+  color: rgb(255, 183, 0);
+  padding: 1rem 2rem;
+  transition: all .2s ease;
+}
+
+.voltar .btn-trailer:hover {
+  background-color: rgb(255, 183, 0);
+  color: #fff;
 }
