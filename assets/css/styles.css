@@ -357,7 +357,6 @@ a {
   flex-direction: column;
   padding: 4rem;
   width: 50%;
-  height: 10%;
   color: #fff;
 }
 
@@ -367,6 +366,7 @@ a {
 }
 
 .container-form img {
+  display: block;
   border-top-right-radius: 2rem;
   border-bottom-right-radius: 2rem;
 }
